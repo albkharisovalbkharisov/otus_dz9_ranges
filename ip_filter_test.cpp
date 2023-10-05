@@ -2,12 +2,12 @@
 #include <charconv>
 #include <fstream>
 #include <sstream>
+#include <iostream>
 #define BOOST_TEST_MODULE ip_filter_test_module
+#include <boost/test/unit_test.hpp>
 
 #include "ip_filter.h"
 #include "ip_pool.h"
-#include <iostream>
-#include <boost/test/unit_test.hpp>
 
 namespace rv = std::ranges::views;
 
@@ -66,7 +66,6 @@ std::vector<std::tuple<std::string, std::function<bool(Ip)>, IpPool>> test_cases
 BOOST_AUTO_TEST_CASE(test_logic)
 {
     for (int i = 0; const auto& data : test_cases_data) {
-        //std::cout << std::get<0>(data) << std::endl;
         auto pool = factory.createPool(std::get<0>(data));
         std::ranges::sort(pool, std::ranges::greater());
         auto result = apply_filter(pool, rv::filter(std::get<1>(data)));
@@ -75,7 +74,6 @@ BOOST_AUTO_TEST_CASE(test_logic)
                 << "expected: " << expected
                 << "result: " << result
                 );
-//        ++i;
     }
 }
 
