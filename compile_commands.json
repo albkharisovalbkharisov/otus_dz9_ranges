@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/marvin/work/cpp/task4",
+  "command": "/usr/bin/g++   -Wpedantic -Wall -Wextra -std=c++20 -std=gnu++20 -o CMakeFiles/ip_filter.dir/main.cpp.o -c /home/marvin/work/cpp/task4/main.cpp",
+  "file": "/home/marvin/work/cpp/task4/main.cpp"
+},
+{
+  "directory": "/home/marvin/work/cpp/task4",
+  "command": "/usr/bin/g++   -Wpedantic -Wall -Wextra -std=c++20 -std=gnu++20 -o CMakeFiles/ip_filter.dir/ip_pool.cpp.o -c /home/marvin/work/cpp/task4/ip_pool.cpp",
+  "file": "/home/marvin/work/cpp/task4/ip_pool.cpp"
+},
+{
+  "directory": "/home/marvin/work/cpp/task4",
+  "command": "/usr/bin/g++ -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB -isystem /opt/boost_1.83/include -Wpedantic -Wall -Wextra -std=c++20 -std=gnu++20 -o CMakeFiles/ip_filter_test.dir/ip_filter_test.cpp.o -c /home/marvin/work/cpp/task4/ip_filter_test.cpp",
+  "file": "/home/marvin/work/cpp/task4/ip_filter_test.cpp"
+},
+{
+  "directory": "/home/marvin/work/cpp/task4",
+  "command": "/usr/bin/g++ -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB -isystem /opt/boost_1.83/include -Wpedantic -Wall -Wextra -std=c++20 -std=gnu++20 -o CMakeFiles/ip_filter_test.dir/ip_pool.cpp.o -c /home/marvin/work/cpp/task4/ip_pool.cpp",
+  "file": "/home/marvin/work/cpp/task4/ip_pool.cpp"
+}
+]
